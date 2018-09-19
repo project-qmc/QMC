@@ -1,0 +1,2 @@
+# QMC
+QMCoin Core
