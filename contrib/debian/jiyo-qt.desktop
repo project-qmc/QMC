@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=QMC
+Comment=QMC P2P Cryptocurrency
+Comment[fr]=QMC, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=QMC, eşten eşe kriptografik sanal para birimi
+Exec=qmc-qt %u
+Terminal=false
+Type=Application
+Icon=qmc128
+MimeType=x-scheme-handler/qmc;
+Categories=Office;Finance;

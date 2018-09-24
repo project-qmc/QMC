@@ -1,0 +1,26 @@
+[Unit]
+Description=QMC's distributed currency daemon
+After=network.target
+
+[Service]
+User=qmc
+Group=qmc
+
+Type=forking
+PIDFile=/var/lib/qmcd/qmcd.pid
+
+ExecStart=/usr/bin/qmcd -daemon -pid=/var/lib/qmcd/qmcd.pid \
+          -conf=/etc/qmc/qmc.conf -datadir=/var/lib/qmcd
+
+ExecStop=-/usr/bin/qmc-cli -conf=/etc/qmc/qmc.conf \
+         -datadir=/var/lib/qmcd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
