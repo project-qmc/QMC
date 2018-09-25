@@ -2142,7 +2142,7 @@ int64_t GetBlockValue(int nHeight)
         }
 
 	if(nHeight <= 300) {
-	return  0 * COIN;
+	return  120 * COIN;
 	} else if (enabled_nodes >= 0 && enabled_nodes <= 60) {
 		nSubsidy =  5.2 * COIN;
 	} else if (enabled_nodes >= 61 && enabled_nodes <= 90) {
