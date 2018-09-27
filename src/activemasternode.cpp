@@ -81,7 +81,7 @@ void CActiveMasternode::ManageStatus()
         }
 
         LogPrintf("CActiveMasternode::ManageStatus() - Checking inbound connection to '%s'\n", service.ToString());
-/* The most buggy part of every mn coin
+/* The most buggy part of every mn coin */
         CNode* pnode = ConnectNode((CAddress)service, NULL, false);
         if (!pnode) {
             notCapableReason = "Could not connect to " + service.ToString();
@@ -89,7 +89,7 @@ void CActiveMasternode::ManageStatus()
             return;
         }
         pnode->Release();
-*/
+
         // Choose coins to use
         CPubKey pubKeyCollateralAddress;
         CKey keyCollateralAddress;
@@ -106,6 +106,7 @@ void CActiveMasternode::ManageStatus()
             pwalletMain->LockCoin(vin.prevout);
 
             // send to all nodes
+                LogPrintf("Register::ManageStatus() - Send to all nodes!\n");
             CPubKey pubKeyMasternode;
             CKey keyMasternode;
 
@@ -133,6 +134,7 @@ void CActiveMasternode::ManageStatus()
     }
 
     //send to all peers
+                LogPrintf("Register::ManageStatus() - Send to all peers!\n");
     if (!SendMasternodePing(errorMessage)) {
         LogPrintf("CActiveMasternode::ManageStatus() - Error on Ping: %s\n", errorMessage);
     }
