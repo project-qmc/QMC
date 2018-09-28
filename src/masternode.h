@@ -100,7 +100,7 @@ public:
 };
 
 //
-// The Masternode Class. For managing the Obfuscation process. It contains the input of the 10000 QMC, signature to prove
+// The Masternode Class. For managing the Obfuscation process. It contains the input of the 10000 CATO, signature to prove
 // it's the one who own that ip address and code for calculating the payment election.
 //
 class CMasternode

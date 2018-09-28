@@ -31,8 +31,8 @@ class CTxBudgetPayment;
 #define VOTE_YES 1
 #define VOTE_NO 2
 
-static const CAmount PROPOSAL_FEE_TX = (1 * COIN);
-static const CAmount BUDGET_FEE_TX = (1 * COIN);
+static const CAmount PROPOSAL_FEE_TX = (50 * COIN);
+static const CAmount BUDGET_FEE_TX = (50 * COIN);
 static const int64_t BUDGET_VOTE_UPDATE_MIN = 60 * 60;
 
 extern std::vector<CBudgetProposalBroadcast> vecImmatureBudgetProposals;
@@ -360,7 +360,7 @@ public:
 
     //check to see if we should vote on this
     void AutoCheck();
-    //total qmc paid out by this budget
+    //total catocoin paid out by this budget
     CAmount GetTotalPayout();
     //vote on this finalized budget as a masternode
     void SubmitVote();
