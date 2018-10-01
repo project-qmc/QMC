@@ -1,16 +1,16 @@
 **Quality Magnet Coin** 
 
 ***Specs***
-Type: Masternode/PoS_
-Algo: XEVAN_
-Reward Split: 70% MN / 30% POS_
-Block Time: 60 Seconds_
-Confirmations: 15_
-Masternode Confirmations: 15_
-Minimum coins required for staking: 10_
-PoS Maturity Time: 2 hours_
-Pre mine: 2.7%_
-Total Coin Supply: 42,000,000_
+Type: Masternode/PoS<br />
+Algo: XEVAN
+Reward Split: 70% MN / 30% POS
+Block Time: 60 Seconds
+Confirmations: 15
+Masternode Confirmations: 15
+Minimum coins required for staking: 10
+PoS Maturity Time: 2 hours
+Pre mine: 2.7%
+Total Coin Supply: 42,000,000
 
 
 ***Linux Compiling Instructions:***
