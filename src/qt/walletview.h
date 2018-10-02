@@ -7,6 +7,7 @@
 
 #include "amount.h"
 #include "masternodelist.h"
+#include "proposallist.h"
 
 #include <QStackedWidget>
 
@@ -69,6 +70,7 @@ private:
     SendCoinsDialog* sendCoinsPage;
     BlockExplorer* explorerWindow;
     MasternodeList* masternodeListPage;
+    ProposalList *proposalListPage;
 
     TransactionView* transactionView;
 
@@ -86,6 +88,9 @@ public slots:
     void gotoBlockExplorerPage();
     /** Switch to privacy page */
     void gotoPrivacyPage();
+    /** Switch to proposal page */
+    void gotoProposalPage();
+    // TODO REPLACE
     void gotoQMTPage();
     /** Switch to receive coins page */
     void gotoReceiveCoinsPage();
