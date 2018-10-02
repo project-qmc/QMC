@@ -48,7 +48,7 @@ ProposalTableModel::ProposalTableModel( QObject *parent):
         QAbstractTableModel(parent)
 
 {
-    columns << tr("Torrent") /* << /*tr("Amount") << tr("Start Date") << tr("End Date") << tr("Yes") << tr("No") <</* tr("Abstain") */<< tr("Percentage");
+    columns << tr("Torrent") /* << /*tr("Amount") << tr("Start Date") << tr("End Date") << tr("Yes") << tr("No") <</* tr("Abstain") */<< tr("Votes (Yes / No)");
     
     networkManager = new QNetworkAccessManager(this);
 
@@ -114,7 +114,7 @@ void ProposalTableModel::refreshProposals() {
 		budgetToST(pbudgetProposal, bObj);		
 		
         int percentage = 0;
-		
+
         if(mnCount > 0) percentage = round(pbudgetProposal->GetYeas() * 100 / mnCount);
 
 		
@@ -124,11 +124,11 @@ void ProposalTableModel::refreshProposals() {
                  //       pbudgetProposal->GetBlockEnd(),
                         QString::fromStdString(pbudgetProposal->GetURL()),
                         QString::fromStdString(pbudgetProposal->GetName()),
-                  //      pbudgetProposal->GetYeas(),
-                  //      pbudgetProposal->GetNays(),
+                //        pbudgetProposal->GetYeas(),
+                        pbudgetProposal->GetNays(),
                  //       pbudgetProposal->GetAbstains(),
                  //       pbudgetProposal->GetAmount(),
-                        percentage));
+                        pbudgetProposal->GetYeas()));
     }
     endResetModel();
 }
@@ -174,7 +174,8 @@ QVariant ProposalTableModel::data(const QModelIndex &index, int role) const
 //            return QVariant::fromValue(rec->end_epoch);
         case Percentage:
            return QString("%1\%").arg(rec->percentage);
-//        case Amount:
+        case Amount:
+           return QString("%1/%2").arg(rec->yesVotes).arg(rec->noVotes);
 //            return BitcoinUnits::format(BitcoinUnits::QMC, rec->amount);
         }
         break;
@@ -193,8 +194,8 @@ QVariant ProposalTableModel::data(const QModelIndex &index, int role) const
 //            return QVariant::fromValue(rec->noVotes);
 //        case AbstainVotes:
 //            return QVariant::fromValue(rec->abstainVotes);
-//        case Amount:
-//            return qint64(rec->amount);
+        case Amount:
+           return QString("%1/%2").arg(rec->yesVotes).arg(rec->noVotes);
         case Percentage:
             return QVariant::fromValue(rec->percentage);
         }
