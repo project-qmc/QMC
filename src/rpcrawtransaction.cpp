@@ -195,7 +195,7 @@ Value getrawtransaction(const Array& params, bool fHelp)
 #ifdef ENABLE_WALLET
 Value listunspent(const Array& params, bool fHelp)
 {
-    if (fHelp || params.size() > 3)
+    if (fHelp || params.size() > 4)
         throw runtime_error(
             "listunspent ( minconf maxconf  [\"address\",...] )\n"
             "\nReturns array of unspent transaction outputs\n"
@@ -211,6 +211,7 @@ Value listunspent(const Array& params, bool fHelp)
             "      \"address\"   (string) qmc address\n"
             "      ,...\n"
             "    ]\n"
+            "4. watchonlyconfig  (numberic, optional, default=3) 1 = list regular unspent transactions, 2 = list only watchonly transactions,  3 = list all unspent transactions (including watchonly)\n" 
             "\nResult\n"
             "[                   (array of json object)\n"
             "  {\n"
@@ -228,7 +229,7 @@ Value listunspent(const Array& params, bool fHelp)
             "\nExamples\n" +
             HelpExampleCli("listunspent", "") + HelpExampleCli("listunspent", "6 9999999 \"[\\\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\\\",\\\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\\\"]\"") + HelpExampleRpc("listunspent", "6, 9999999 \"[\\\"1PGFqEzfmQch1gKD3ra4k18PNj3tTUUSqg\\\",\\\"1LtvqCaApEdUGFkpKMM4MstjcaL4dKg8SP\\\"]\""));
 
-    RPCTypeCheck(params, list_of(int_type)(int_type)(array_type));
+    RPCTypeCheck(params, list_of(int_type)(int_type)(array_type)(int_type));
 
     int nMinDepth = 1;
     if (params.size() > 0)
@@ -251,10 +252,17 @@ Value listunspent(const Array& params, bool fHelp)
         }
     }
 
+    int nWatchonlyConfig = 3;
+    if(params.size() > 3) {
+        nWatchonlyConfig = params[3].get_int();
+        if (nWatchonlyConfig > 3 || nWatchonlyConfig < 1)
+            nWatchonlyConfig = 3;
+    }
+
     Array results;
     vector<COutput> vecOutputs;
     assert(pwalletMain != NULL);
-    pwalletMain->AvailableCoins(vecOutputs, false);
+pwalletMain->AvailableCoins(vecOutputs, false, NULL, false, ALL_COINS, false, nWatchonlyConfig);
     BOOST_FOREACH (const COutput& out, vecOutputs) {
         if (out.nDepth < nMinDepth || out.nDepth > nMaxDepth)
             continue;
