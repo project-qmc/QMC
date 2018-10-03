@@ -2182,9 +2182,7 @@ int64_t GetBlockValue(int nHeight)
 
 // Emergency Inflation/Deflation manual control
 if(GetSporkValue(SPORK_37_DI_CONTROL) == 1) {
-printf("Emergency Inflation/Deflation manual control has been enabled\n"); 
 nSubsidy = GetSporkValue(SPORK_38_DI_VALUE) * COIN;
-printf("Emergency reawrd is set to %d", (nSubsidy/COIN));
 }
 
     return nSubsidy;
