@@ -81,8 +81,6 @@ jobs:
             - shellcheck
       install:
         - travis_retry pip3 install flake8 --user
-      before_script:
-        - git fetch --unshallow
       script:
         - contrib/devtools/git-subtree-check.sh src/univalue
         - contrib/devtools/git-subtree-check.sh src/secp256k1
