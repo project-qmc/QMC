@@ -2,7 +2,7 @@
 
 ***Specs***<br />
 Type: Masternode/PoS<br />
-Algo: XEVAN<br />
+Algo: XEVAN / Double SHA<br />
 Reward Split: 70% MN / 30% POS<br />
 Block Time: 60 Seconds<br />
 Confirmations: 15<br />
