@@ -42,7 +42,7 @@ bool ProposalFilterProxy::filterAcceptsRow(int sourceRow, const QModelIndex &sou
        return false;
     if(proposalEndDate < endDate)
        return false;
-    if(!propName.contains(proposalName, Qt::CaseInsensitive))
+    if(!propName.contains(QRegExp(proposalName, Qt::CaseInsensitive)))
         return false;
     if(amount < minAmount)
         return false;
@@ -72,6 +72,7 @@ void ProposalFilterProxy::setProposalEnd(const CAmount& minimum)
 
 void ProposalFilterProxy::setProposal(const QString &proposal)
 {
+	proposal.replace(" ", ".*");
     this->proposalName = proposal;
     invalidateFilter();
 }
