@@ -26,7 +26,7 @@ class QSignalMapper;
 class QTableView;
 QT_END_NAMESPACE
 
-#define PROPOSALLIST_UPDATE_SECONDS 30
+#define PROPOSALLIST_UPDATE_SECONDS 60
 
 class ProposalList : public QWidget
 {

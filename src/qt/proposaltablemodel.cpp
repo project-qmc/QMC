@@ -92,8 +92,8 @@ void budgetToST(CBudgetProposal* pbudgetProposal, UniValue& bObj)
 
 void ProposalTableModel::refreshProposals() {
     beginResetModel();
+    qDeleteAll(proposalRecords);
     proposalRecords.clear();
-
     int mnCount = mnodeman.CountEnabled();
     std::vector<CBudgetProposal*> bObj = budget.GetAllProposals();
 
