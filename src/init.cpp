@@ -1301,6 +1301,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
 
     // start tor
+	GetBoolArg("-torenabled", true); // added seperatly jic!
     if(GetBoolArg("-torenabled", false)){
         StartTorEnabled(threadGroup, scheduler);
         SetLimited(NET_TOR);
