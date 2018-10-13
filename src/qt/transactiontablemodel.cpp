@@ -375,17 +375,22 @@ QVariant TransactionTableModel::txAddressDecoration(const TransactionRecord* wtx
     switch (wtx->type) {
     case TransactionRecord::Generated:
     case TransactionRecord::StakeMint:
-    case TransactionRecord::MNReward:
         return QIcon(":/icons/tx_mined");
+    case TransactionRecord::MNReward:
+        return QIcon(":/icons/tx_mn");
     case TransactionRecord::RecvWithObfuscation:
+        return QIcon(":/icons/tx_obf");
     case TransactionRecord::RecvWithAddress:
     case TransactionRecord::RecvFromOther:
-    case TransactionRecord::RecvFromZerocoinSpend:
         return QIcon(":/icons/tx_input");
+    case TransactionRecord::RecvFromZerocoinSpend:
+        return QIcon(":/icons/tx_obf");
     case TransactionRecord::SendToAddress:
     case TransactionRecord::SendToOther:
-    case TransactionRecord::ZerocoinSpend:
         return QIcon(":/icons/tx_output");
+    case TransactionRecord::ZerocoinSpend:
+        return QIcon(":/icons/tx_obf");
+
     default:
         return QIcon(":/icons/tx_inout");
     }
