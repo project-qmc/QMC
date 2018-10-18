@@ -2181,10 +2181,11 @@ int64_t GetBlockValue(int nHeight)
 
 
 // Emergency Inflation/Deflation manual control
+/* No need for this anymore. Removed.
 if(GetSporkValue(SPORK_37_DI_CONTROL) == 1) {
 nSubsidy = GetSporkValue(SPORK_38_DI_VALUE) * COIN;
 }
-
+*/
     return nSubsidy;
 }
 
