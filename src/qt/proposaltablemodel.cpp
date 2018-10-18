@@ -175,7 +175,7 @@ QVariant ProposalTableModel::data(const QModelIndex &index, int role) const
         case Percentage:
            return QString("%1\%").arg(rec->percentage);
         case Amount:
-           return QString("%1/%2").arg(rec->yesVotes).arg(rec->noVotes);
+           return QString("%1 / %2").arg(rec->yesVotes).arg(rec->noVotes);
 //            return BitcoinUnits::format(BitcoinUnits::QMC, rec->amount);
         }
         break;
