@@ -362,7 +362,7 @@ CBudgetDB::ReadResult CBudgetDB::Read(CBudgetManager& objToLoad, bool fDryRun)
     LogPrint("masternode","  %s\n", objToLoad.ToString());
     if (!fDryRun) {
         LogPrint("masternode","Budget manager - cleaning....\n");
-        objToLoad.CheckAndRemove();
+      //  objToLoad.CheckAndRemove();
         LogPrint("masternode","Budget manager - result:\n");
         LogPrint("masternode","  %s\n", objToLoad.ToString());
     }
@@ -872,7 +872,7 @@ void CBudgetManager::NewBlock()
     }
 
 
-    CheckAndRemove();
+//    CheckAndRemove();
 
     //remove invalid votes once in a while (we have to check the signatures and validity of every vote, somewhat CPU intensive)
 
