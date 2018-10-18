@@ -195,7 +195,7 @@ QVariant ProposalTableModel::data(const QModelIndex &index, int role) const
 //        case AbstainVotes:
 //            return QVariant::fromValue(rec->abstainVotes);
         case Amount:
-           return QString("%1/%2").arg(rec->yesVotes).arg(rec->noVotes);
+           return QString("%1 / %2").arg(rec->yesVotes).arg(rec->noVotes);
         case Percentage:
             return QVariant::fromValue(rec->percentage);
         }
