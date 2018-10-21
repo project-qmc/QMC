@@ -24,6 +24,7 @@
         <file alias="receiving_addresses">res/icons/receive.png</file>
         <file alias="privacy">res/icons/privacy.png</file>
         <file alias="magnet">res/icons/magnet.png</file>
+        <file alias="mag">res/icons/mag.png</file> 
         <file alias="editpaste">res/icons/editpaste.png</file>
         <file alias="editcopy">res/icons/editcopy.png</file>
         <file alias="add">res/icons/add.png</file>

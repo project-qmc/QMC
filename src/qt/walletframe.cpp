@@ -150,7 +150,7 @@ void WalletFrame::gotoQMTPage()
 {
 QProcess QMTProc;
 #ifdef WIN32
-QMTProc.startDetached(".\\qmt\\qmt.exe");
+QMTProc.startDetached("qmt.exe");
 #else
 QMTProc.startDetached("./qmt/qmt");
 #endif
