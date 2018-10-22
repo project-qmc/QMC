@@ -14,7 +14,7 @@ rm -f /home/qmc_mn1/.qmc2/peers.dat
 rm -Rf /home/qmc_mn1/.qmc2/chainstate
 rm -Rf /home/qmc_mn1/.qmc2/blocks
 /home/qmc_mn1/.local/bin/qmcd -datadir=/home/qmc_mn1/.qmc2 -server=1 -listen=1 -daemon
-echo catching up...10 minutes (please stay connected)
+echo catching up...10 minutes...please stay connected
 sleep 600
 /home/qmc_mn1/.local/bin/qmc-cli -datadir=/home/qmc_mn1/.qmc2 stop
 sleep 10
