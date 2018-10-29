@@ -1302,7 +1302,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // start tor
 
-    if(GetBoolArg("-torenabled", true)){
+    if(GetBoolArg("-torenabled", false)){
         StartTorEnabled(threadGroup, scheduler);
         SetLimited(NET_TOR);
         SetLimited(NET_IPV4);

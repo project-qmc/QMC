@@ -60,11 +60,15 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 (12345, uint256("602f802f6edf6f6ed9a5cc8ac0c187d8d6f779c4a5b33e7b6dbe0def32a9f6df"))
 (20000, uint256("44d42436935a4f138d7c050a120ac224b530779e8610372a1b82081ff221896c"))
 (25483, uint256("4868b4cd2622588cb57ee91bd6cf15262ee08227f705430ccb92db0afe2ca33f"))
-(30654, uint256("0eaa8716bd6cdff95741f7d38cb29b6668142d1a9d7205c7860d09ede2b31f2d"));
+(30654, uint256("0eaa8716bd6cdff95741f7d38cb29b6668142d1a9d7205c7860d09ede2b31f2d"))
+(35400, uint256("ce467be47f7fa6d88b7a9c48ab42abc7db8cc869f8735ab35852fb7e5e962f42"))
+(35404, uint256("d4beb6c80a09e3ec38a760cd8544795997fef58a022b64763ae7cf0b17f5858f"))
+(35405, uint256("f1dd7c9d12e2bd097ad6fa7684ec4bcda5b1c1b1b849f1c4ac2ee88b5078ed54"))
+(36039, uint256("d1b002e3750ce48c0e593d0841fc100793a99f325a8d7d4eaef3a72a01be7829"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1539724902, // * UNIX timestamp of last checkpoint block
-    67958,    // * total number of transactions between genesis and last checkpoint
+    1540045716, // * UNIX timestamp of last checkpoint block
+    79762,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2880        // * estimated number of transactions per day after checkpoint
 };
@@ -106,10 +110,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xaf;
-        pchMessageStart[1] = 0xdf;
-        pchMessageStart[2] = 0xfd;
-        pchMessageStart[3] = 0xfa;
+        pchMessageStart[0] = 0xf0;
+        pchMessageStart[1] = 0x0f;
+        pchMessageStart[2] = 0xba;
+        pchMessageStart[3] = 0xbe;
         vAlertPubKey = ParseHex("04be73745881d6babaa9f268fa0a6a01e19716a2c73b75810fa757a1732967c708a0f9dd79b78e4e20458a4328bfe525356782df9d1bed2bf87f1af76d83da4720");
         nDefaultPort = 28443;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
@@ -158,18 +162,14 @@ public:
         assert(hashGenesisBlock == uint256("0x00000f52317b93c7c9b7be721fedbfccea556a041605faa9b5e26a382428c23a"));
         assert(genesis.hashMerkleRoot == uint256("0x0bad4c53df86264463da4b76ce41fe5c4d92892e481d817e1ee460ed1d1fed56"));
 
-       vSeeds.push_back(CDNSSeedData("45.76.47.27", "45.76.47.27"));
-       vSeeds.push_back(CDNSSeedData("107.174.86.160", "107.174.86.160"));
        vSeeds.push_back(CDNSSeedData("51.38.75.168", "51.38.75.168"));
        vSeeds.push_back(CDNSSeedData("54.38.148.199", "54.38.148.199"));
        vSeeds.push_back(CDNSSeedData("51.38.75.169", "51.38.75.169"));
        vSeeds.push_back(CDNSSeedData("136.243.26.230", "136.243.26.230"));
-       vSeeds.push_back(CDNSSeedData("51.38.75.175", "51.38.75.175"));
        vSeeds.push_back(CDNSSeedData("54.38.145.192", "54.38.145.192"));
        vSeeds.push_back(CDNSSeedData("54.38.76.75", "54.38.76.75"));
        vSeeds.push_back(CDNSSeedData("54.38.76.79", "54.38.76.79"));
-       vSeeds.push_back(CDNSSeedData("95.179.199.185", "95.179.199.185"));
-       vSeeds.push_back(CDNSSeedData("95.179.198.60", "95.179.198.60"));
+
 
 
 
