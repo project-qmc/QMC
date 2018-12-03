@@ -1,23 +1,29 @@
-CatoCoin - Port: 33888 RPC Port: 6082
+**Quality Magnet Coin** 
 
-Specs
-  Type: Masternode/POS
-  Reward Split: 70% MN / 30% POS
-  Block Time: 60 Seconds
-  Confirmations: 15
-  Masternode Confirmations: 15
-  Minimum coins required for staking: 100
-  POS Maturity Time: 2 hours
-  Total Coin Supply: 42,000,000
-  Pre mine: 400,000
-  Pre-mine %: Less than 1%
+***Specs***<br />
+Type: Masternode/PoS<br />
+Algo: XEVAN<br />
+Reward Split: 70% MN / 30% POS<br />
+Block Time: 60 Seconds<br />
+Confirmations: 15<br />
+Masternode Confirmations: 15<br />
+Minimum coins required for staking: 10<br />
+PoS Maturity Time: 2 hours<br />
+Pre mine: 2.7%<br />
+Total Coin Supply: 42,000,000<br />
 
 
-Linux Compiling Instruction
-  ./autogen.sh
+***Linux Compiling Instructions:***
+```./autogen.sh
   ./configure --disable-tests --disable-bench
-  make
+  make -j4 # You can change 4 to any number of CPUs you would like to use)```
 
-when done
-  strip ./qmcd
-  strip ./catcoin-cli
+
+Tor can be enabled by running with -torenabled
+or by editing the qmc2.conf file and adding the line: torenabled=1
+
+
+***Contribution***
+We highly encourage community development!
+If you feel like anything should be added or removed, please don't hesitate to create a pull request.
+
