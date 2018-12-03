@@ -13,6 +13,9 @@
   <property name="windowTitle">
    <string>Transaction details</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{width: 80px; height: 25px;}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QTextEdit" name="detailText">

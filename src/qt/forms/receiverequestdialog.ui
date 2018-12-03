@@ -10,6 +10,9 @@
     <height>597</height>
    </rect>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{width: 80px; height: 25px;}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_3">
    <item>
     <widget class="QRImageWidget" name="lblQRCode">
@@ -71,6 +74,18 @@
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="btnCopyURI">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="text">
         <string>Copy &amp;URI</string>
        </property>
@@ -81,6 +96,18 @@
      </item>
      <item>
       <widget class="QPushButton" name="btnCopyAddress">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="text">
         <string>Copy &amp;Address</string>
        </property>
@@ -91,6 +118,18 @@
      </item>
      <item>
       <widget class="QPushButton" name="btnSaveAs">
+       <property name="minimumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>110</width>
+         <height>30</height>
+        </size>
+       </property>
        <property name="text">
         <string>&amp;Save Image...</string>
        </property>
@@ -114,6 +153,12 @@
      </item>
      <item>
       <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
        <property name="standardButtons">
         <set>QDialogButtonBox::Close</set>
        </property>

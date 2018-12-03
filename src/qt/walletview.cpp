@@ -261,7 +261,7 @@ void WalletView::gotoSendCoinsPage(QString addr)
 
     if (!addr.isEmpty())
         sendCoinsPage->setAddress(addr);
-}	
+}
 
 void WalletView::gotoSignMessageTab(QString addr)
 {

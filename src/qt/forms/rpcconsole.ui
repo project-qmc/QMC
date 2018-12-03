@@ -17,7 +17,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab_info">
       <attribute name="title">
@@ -353,6 +353,18 @@
        </item>
        <item row="16" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>30</height>
+          </size>
+         </property>
          <property name="toolTip">
           <string>Open the QMC debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
@@ -406,14 +418,33 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="lineEdit"/>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
          </item>
          <item>
           <widget class="QPushButton" name="clearButton">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
-             <width>24</width>
-             <height>24</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
            <property name="toolTip">
@@ -491,6 +522,18 @@
            </item>
            <item>
             <widget class="QPushButton" name="btnClearTrafficGraph">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
              <property name="text">
               <string>&amp;Clear</string>
              </property>
@@ -1085,8 +1128,8 @@
         <widget class="QPushButton" name="btn_resync">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1163,8 +1206,8 @@
         <widget class="QPushButton" name="btn_salvagewallet">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1193,8 +1236,8 @@
         <widget class="QPushButton" name="btn_rescan">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1223,8 +1266,8 @@
         <widget class="QPushButton" name="btn_zapwallettxes1">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1253,8 +1296,8 @@
         <widget class="QPushButton" name="btn_zapwallettxes2">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1283,8 +1326,8 @@
         <widget class="QPushButton" name="btn_upgradewallet">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">
@@ -1313,8 +1356,8 @@
         <widget class="QPushButton" name="btn_reindex">
          <property name="minimumSize">
           <size>
-           <width>100</width>
-           <height>23</height>
+           <width>160</width>
+           <height>30</height>
           </size>
          </property>
          <property name="text">

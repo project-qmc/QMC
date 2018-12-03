@@ -22,8 +22,20 @@
      <x>170</x>
      <y>130</y>
      <width>201</width>
-     <height>20</height>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string>Enter whole numbers 1 - 100</string>
@@ -38,8 +50,20 @@
      <x>170</x>
      <y>160</y>
      <width>401</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string/>
@@ -91,9 +115,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>20</x>
      <y>230</y>
-     <width>120</width>
-     <height>23</height>
+     <width>130</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string/>
@@ -110,9 +146,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>150</x>
      <y>260</y>
-     <width>120</width>
-     <height>23</height>
+     <width>130</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="statusTip">
     <string>Deactivate MultiSend</string>
@@ -126,9 +174,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>570</x>
      <y>160</y>
-     <width>28</width>
-     <height>21</height>
+     <width>30</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string>Choose an address from the address book</string>
@@ -184,9 +244,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>150</x>
      <y>230</y>
-     <width>120</width>
-     <height>23</height>
+     <width>130</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string/>
@@ -203,9 +275,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>20</x>
      <y>260</y>
-     <width>120</width>
-     <height>23</height>
+     <width>130</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>130</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="statusTip">
     <string>Activate MultiSend</string>
@@ -219,9 +303,21 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>20</x>
      <y>200</y>
-     <width>251</width>
-     <height>23</height>
+     <width>260</width>
+     <height>30</height>
     </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>260</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>260</width>
+     <height>30</height>
+    </size>
    </property>
    <property name="toolTip">
     <string/>
@@ -238,8 +334,8 @@ MultiSend will not be activated unless you have clicked Activate</string>
     <rect>
      <x>30</x>
      <y>100</y>
-     <width>351</width>
-     <height>24</height>
+     <width>363</width>
+     <height>25</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">

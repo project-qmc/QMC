@@ -16,6 +16,14 @@
   <property name="autoFillBackground">
    <bool>false</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QStackedWidget{border: none;}
+QToolButton{padding-left: 0px;}
+</string>
+  </property>
+  <property name="currentIndex">
+   <number>0</number>
+  </property>
   <widget class="QFrame" name="SendCoins">
    <property name="toolTip">
     <string>This is a normal payment.</string>
@@ -50,6 +58,18 @@
       </property>
       <item>
        <widget class="QValidatedLineEdit" name="payTo">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>The QMC address to send the payment to</string>
         </property>
@@ -57,6 +77,18 @@
       </item>
       <item>
        <widget class="QToolButton" name="addressBookButton">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Choose previously used address</string>
         </property>
@@ -64,7 +96,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../qmc.qrc">
+         <iconset>
           <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
         </property>
         <property name="shortcut">
@@ -74,6 +106,18 @@
       </item>
       <item>
        <widget class="QToolButton" name="pasteButton">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Paste address from clipboard</string>
         </property>
@@ -81,7 +125,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../qmc.qrc">
+         <iconset>
           <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
         </property>
         <property name="shortcut">
@@ -91,6 +135,18 @@
       </item>
       <item>
        <widget class="QToolButton" name="deleteButton">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Remove this entry</string>
         </property>
@@ -98,7 +154,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../qmc.qrc">
+         <iconset>
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -120,6 +176,18 @@
     </item>
     <item row="1" column="1">
      <widget class="QLineEdit" name="addAsLabel">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="toolTip">
        <string>Enter a label for this address to add it to the list of used addresses</string>
       </property>
@@ -139,7 +207,20 @@
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="BitcoinAmountField" name="payAmount"/>
+     <widget class="BitcoinAmountField" name="payAmount">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="messageLabel">
@@ -615,6 +696,18 @@
       </item>
       <item>
        <widget class="QToolButton" name="deleteButton_is">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Remove this entry</string>
         </property>
@@ -622,7 +715,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../qmc.qrc">
+         <iconset>
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -661,6 +754,18 @@
     </item>
     <item row="2" column="1">
      <widget class="BitcoinAmountField" name="payAmount_is">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1151,6 +1256,18 @@
       </item>
       <item>
        <widget class="QToolButton" name="deleteButton_s">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="toolTip">
          <string>Remove this entry</string>
         </property>
@@ -1158,7 +1275,7 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset resource="../qmc.qrc">
+         <iconset>
           <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
         </property>
        </widget>
@@ -1197,6 +1314,18 @@
     </item>
     <item row="2" column="1">
      <widget class="BitcoinAmountField" name="payAmount_s">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="acceptDrops">
        <bool>false</bool>
       </property>
@@ -1215,6 +1344,7 @@
    <class>BitcoinAmountField</class>
    <extends>QLineEdit</extends>
    <header>bitcoinamountfield.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <tabstops>

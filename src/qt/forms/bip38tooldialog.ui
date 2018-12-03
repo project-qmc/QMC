@@ -20,7 +20,7 @@
    <item>
     <widget class="QTabWidget" name="tabWidget">
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tabBip38Encrypt">
       <attribute name="title">
@@ -53,7 +53,35 @@
           </widget>
          </item>
          <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <widget class="QValidatedLineEdit" name="addressIn_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>The QMC address to sign the message with</string>
            </property>
@@ -61,6 +89,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="addressBookButton_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Choose previously used address</string>
            </property>
@@ -81,6 +121,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="pasteButton_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Paste address from clipboard</string>
            </property>
@@ -111,7 +163,35 @@
           </widget>
          </item>
          <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <widget class="QLineEdit" name="passphraseIn_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="echoMode">
             <enum>QLineEdit::Password</enum>
            </property>
@@ -135,7 +215,35 @@
           </widget>
          </item>
          <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <widget class="QLineEdit" name="encryptedKeyOut_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <italic>true</italic>
@@ -148,6 +256,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="copyKeyButton_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Copy the current signature to the system clipboard</string>
            </property>
@@ -167,40 +287,6 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_3_ENC">
-         <item>
-          <widget class="QPushButton" name="encryptKeyButton_ENC">
-           <property name="toolTip">
-            <string>Sign the message to prove you own this QMC address</string>
-           </property>
-           <property name="text">
-            <string>Encrypt &amp;Key</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../qmc.qrc">
-             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="clearButton_ENC">
-           <property name="toolTip">
-            <string>Reset all sign message fields</string>
-           </property>
-           <property name="text">
-            <string>Clear &amp;All</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../qmc.qrc">
-             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
          <item>
           <spacer name="horizontalSpacer_1_ENC">
            <property name="orientation">
@@ -243,6 +329,64 @@
            </property>
           </spacer>
          </item>
+         <item>
+          <widget class="QPushButton" name="clearButton_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Reset all sign message fields</string>
+           </property>
+           <property name="text">
+            <string>Clear &amp;All</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qmc.qrc">
+             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="encryptKeyButton_ENC">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Sign the message to prove you own this QMC address</string>
+           </property>
+           <property name="text">
+            <string>Encrypt &amp;Key</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qmc.qrc">
+             <normaloff>:/icons/edit</normaloff>:/icons/edit</iconset>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
       </layout>
@@ -279,6 +423,18 @@
          </item>
          <item>
           <widget class="QValidatedLineEdit" name="encryptedKeyIn_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>The QMC address the message was signed with</string>
            </property>
@@ -297,6 +453,18 @@
          </item>
          <item>
           <widget class="QLineEdit" name="passphraseIn_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="echoMode">
             <enum>QLineEdit::Password</enum>
            </property>
@@ -306,40 +474,6 @@
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_DEC">
-         <item>
-          <widget class="QPushButton" name="decryptKeyButton_DEC">
-           <property name="toolTip">
-            <string>Verify the message to ensure it was signed with the specified QMC address</string>
-           </property>
-           <property name="text">
-            <string>Decrypt &amp;Key</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../qmc.qrc">
-             <normaloff>:/icons/transaction_0</normaloff>:/icons/transaction_0</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="clearButton_DEC">
-           <property name="toolTip">
-            <string>Reset all verify message fields</string>
-           </property>
-           <property name="text">
-            <string>Clear &amp;All</string>
-           </property>
-           <property name="icon">
-            <iconset resource="../qmc.qrc">
-             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
-           </property>
-           <property name="autoDefault">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
          <item>
           <spacer name="horizontalSpacer_1_DEC">
            <property name="orientation">
@@ -382,6 +516,64 @@
            </property>
           </spacer>
          </item>
+         <item>
+          <widget class="QPushButton" name="clearButton_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Reset all verify message fields</string>
+           </property>
+           <property name="text">
+            <string>Clear &amp;All</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qmc.qrc">
+             <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="decryptKeyButton_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Verify the message to ensure it was signed with the specified QMC address</string>
+           </property>
+           <property name="text">
+            <string>Decrypt &amp;Key</string>
+           </property>
+           <property name="icon">
+            <iconset resource="../qmc.qrc">
+             <normaloff>:/icons/transaction_0</normaloff>:/icons/transaction_0</iconset>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
         </layout>
        </item>
        <item>
@@ -394,19 +586,25 @@
           </widget>
          </item>
          <item>
-          <widget class="QValidatedLineEdit" name="decryptedKeyOut_DEC"/>
+          <widget class="QValidatedLineEdit" name="decryptedKeyOut_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
-         <item>
-          <widget class="QPushButton" name="importAddressButton_DEC">
-           <property name="text">
-            <string>Import Address</string>
-           </property>
-          </widget>
-         </item>
          <item>
           <widget class="QLabel" name="label_4">
            <property name="text">
@@ -415,7 +613,39 @@
           </widget>
          </item>
          <item>
-          <widget class="QLineEdit" name="addressOut_DEC"/>
+          <widget class="QLineEdit" name="addressOut_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="importAddressButton_DEC">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Import Address</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </item>

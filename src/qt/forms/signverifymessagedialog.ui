@@ -47,6 +47,18 @@
          </property>
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_SM">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>The QMC address to sign the message with</string>
            </property>
@@ -54,6 +66,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="addressBookButton_SM">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Choose previously used address</string>
            </property>
@@ -74,6 +98,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="pasteButton_SM">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Paste address from clipboard</string>
            </property>
@@ -118,6 +154,18 @@
          </property>
          <item>
           <widget class="QLineEdit" name="signatureOut_SM">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <italic>true</italic>
@@ -130,6 +178,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="copySignatureButton_SM">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Copy the current signature to the system clipboard</string>
            </property>
@@ -151,6 +211,18 @@
         <layout class="QHBoxLayout" name="horizontalLayout_3_SM">
          <item>
           <widget class="QPushButton" name="signMessageButton_SM">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Sign the message to prove you own this QMC address</string>
            </property>
@@ -168,6 +240,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="clearButton_SM">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Reset all sign message fields</string>
            </property>
@@ -257,6 +341,18 @@
          </property>
          <item>
           <widget class="QValidatedLineEdit" name="addressIn_VM">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>The QMC address the message was signed with</string>
            </property>
@@ -264,6 +360,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="addressBookButton_VM">
+           <property name="minimumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Choose previously used address</string>
            </property>
@@ -288,12 +396,37 @@
         <widget class="QPlainTextEdit" name="messageIn_VM"/>
        </item>
        <item>
-        <widget class="QValidatedLineEdit" name="signatureIn_VM"/>
+        <widget class="QValidatedLineEdit" name="signatureIn_VM">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
        </item>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_2_VM">
          <item>
           <widget class="QPushButton" name="verifyMessageButton_VM">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Verify the message to ensure it was signed with the specified QMC address</string>
            </property>
@@ -311,6 +444,18 @@
          </item>
          <item>
           <widget class="QPushButton" name="clearButton_VM">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>120</width>
+             <height>30</height>
+            </size>
+           </property>
            <property name="toolTip">
             <string>Reset all verify message fields</string>
            </property>

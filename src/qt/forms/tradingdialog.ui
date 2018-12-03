@@ -619,7 +619,7 @@
       <rect>
        <x>21</x>
        <y>11</y>
-       <width>227</width>
+       <width>236</width>
        <height>19</height>
       </rect>
      </property>
@@ -1088,7 +1088,7 @@
       <rect>
        <x>11</x>
        <y>301</y>
-       <width>259</width>
+       <width>267</width>
        <height>19</height>
       </rect>
      </property>
@@ -1754,7 +1754,7 @@
       <string>Sell QMC</string>
      </property>
      <property name="icon">
-      <iconset resource="../qmc">
+      <iconset resource="../qmc.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -2232,7 +2232,7 @@
       <rect>
        <x>10</x>
        <y>300</y>
-       <width>268</width>
+       <width>280</width>
        <height>19</height>
       </rect>
      </property>
