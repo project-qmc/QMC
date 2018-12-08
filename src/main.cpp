@@ -55,9 +55,6 @@ using namespace libzerocoin;
 #define SCRIPT_OFFSET 6
 // For Script size (BIGNUM/Uint256 size)
 #define BIGNUM_SIZE   4
-/**
- * Global state
- */
 
 CCriticalSection cs_main;
 
