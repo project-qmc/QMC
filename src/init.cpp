@@ -223,11 +223,11 @@ void InterruptTorEnabled()
 }
 void StopTorEnabled()
 {
-    if (baseTor) {
-        torEnabledThread.join();
-        event_base_free(baseTor);
-        baseTor = 0;
-    }
+     if (baseTor) {
+         torEnabledThread.join();
+         event_base_free(baseTor);
+         baseTor = 0;
+     }
 }
 
 
