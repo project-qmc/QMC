@@ -28,11 +28,8 @@ int nSubmittedFinalBudget;
 
 int GetBudgetPaymentCycleBlocks()
 {
-    // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-    if (Params().NetworkID() == CBaseChainParams::MAIN) return 43200;
 
-
-    return 144; //ten times per day on testnet
+    return 43200; //ten times per day on testnet
 }
 
 bool IsBudgetCollateralValid(uint256 nTxCollateralHash, uint256 nExpectedHash, std::string& strError, int64_t& nTime, int& nConf)
@@ -164,7 +161,7 @@ void CBudgetManager::SubmitFinalBudget()
     }
 
     if (vecTxBudgetPayments.size() < 1) {
-        LogPrint("masternode","CBudgetManager::SubmitFinalBudget - Found No Proposals For Period\n");
+       LogPrint("masternode","CBudgetManager::SubmitFinalBudget - Found No Proposals For Period\n");
         return;
     }
 
